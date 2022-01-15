@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="txtemail" type="id" />
+    <item name="txtphone" type="id" />
+    <item name="createMeetup" type="id" />
+    <item name="createDbBtn" type="id" />
+    <item name="recyclerView" type="id" />
+    <item name="meetup_address_txt" type="id" />
+</resources>

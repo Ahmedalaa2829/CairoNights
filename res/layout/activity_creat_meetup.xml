@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreatMeetup">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create your Meetup"
+        android:id="@+id/headerTV"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+    
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create"
+        android:id="@id/createDbBtn"
+        android:layout_below="@id/headerTV"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:onClick="createDatabase"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the name of the meetup here"
+        android:id="@+id/meetupName"
+        android:textSize="15sp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/createDbBtn"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/et_border"
+        android:padding="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the details of the meetup here"
+        android:id="@+id/meetupDetails"
+        android:textSize="15sp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/meetupName"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/et_border"
+        android:padding="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the address here"
+        android:id="@+id/meetupAddress"
+        android:textSize="15sp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/meetupDetails"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/et_border"
+        android:padding="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the contacts here"
+        android:inputType="number"
+        android:id="@+id/meetupContacts"
+        android:textSize="15sp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/meetupAddress"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/et_border"
+        android:padding="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=" Time "
+        android:id="@+id/meetupTime"
+        android:textSize="15sp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/meetupContacts"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/et_border"
+        android:padding="10dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Insert Value"
+        android:id="@+id/btnAddData"
+        android:layout_below="@id/meetupTime"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:onClick="insertValuesIntoDatabase"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show values from Database "
+        android:id="@+id/btnViewAll"
+        android:layout_below="@id/btnAddData"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:onClick="showValuesFromDatabase"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnViewAll"
+        android:id="@+id/valuesScrollView">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Here the value of the database will be shown"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:id="@+id/values"
+            android:background="@drawable/et_border"/>
+    </ScrollView>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

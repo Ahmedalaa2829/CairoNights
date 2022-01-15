@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/breat"
+    tools:context=".AddActivity">
+
+    <EditText
+        android:id="@+id/title_meetup"
+        android:layout_width="411dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="134dp"
+        android:background="#41000000"
+        android:ems="10"
+        android:hint="MeetUp Name"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#85FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/address_meetup"
+        android:layout_width="409dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="24dp"
+        android:background="#40000000"
+        android:ems="10"
+        android:hint="Address"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#84FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_meetup" />
+
+    <EditText
+        android:id="@+id/time_meetup"
+        android:layout_width="409dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="22dp"
+        android:background="#8C000000"
+        android:ems="10"
+        android:hint="Time"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#85FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/address_meetup" />
+
+    <EditText
+        android:id="@+id/contact_meetup"
+        android:layout_width="407dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="22dp"
+        android:background="#8C000000"
+        android:ems="10"
+        android:hint="Contacts"
+        android:inputType="time"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#85FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/time_meetup" />
+
+    <Button
+        android:id="@+id/add_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="163dp"
+        android:layout_marginLeft="163dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginRight="160dp"
+        android:text="Add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contact_meetup" />
+</androidx.constraintlayout.widget.ConstraintLayout>
